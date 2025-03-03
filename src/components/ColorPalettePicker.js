@@ -21,9 +21,11 @@ export default function ColorPalettePicker() {
         onChange={(e) => setSelectedColor(e.target.value)}
         className="w-16 h-16 border rounded-lg"
       />
+      
       <button onClick={addColor} className="bg-blue-500 text-white px-4 py-2 rounded-lg">
         Add Color
       </button>
+
       <div className="grid grid-cols-3 gap-4">
         {colors.map((color, index) => (
           <div
